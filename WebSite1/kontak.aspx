@@ -11,6 +11,8 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .navbar-container {
@@ -46,12 +48,18 @@
                         background-color: #4CAF50;
                     }
 
+        form {
+            width: 100%;
+            height: 110vh;
+        }
+
         .container {
             width: 80%;
             margin: 20px auto;
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
         }
 
         h1 {
@@ -117,19 +125,21 @@
             padding: 20px;
             background-color: #333;
             color: white;
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="navbar-container">
+    <div class="navbar-container">
             <ul class="navbar">
                 <li><a href="obt.aspx">Obat</a></li>
                 <li><a href="tentang.aspx">Tentang</a></li>
                 <li><a href="kontak.aspx" class="active">Kontak</a></li>
             </ul>
         </div>
-
+    <form id="form1" runat="server">
         <div class="container">
             <h1>Hubungi Kami</h1>
             <div class="form-group">
@@ -155,10 +165,9 @@
                 <p><strong>Telepon:</strong> 085183119503</p>
             </div>
         </div>
-
-        <div class="footer">
+    </form>
+    <div class="footer">
             &copy; 2025 Apotek 4 Husada. All rights reserved.
         </div>
-    </form>
 </body>
 </html>
